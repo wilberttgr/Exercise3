@@ -113,6 +113,13 @@ namespace Exercise3
             else
                 return false;
         }
+        public void firstNode()//add method firstNode 
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+                Console.WriteLine("\nThe first record in the list is:\n\n" + LAST.next.studentNumber + "     " + LAST.next.studentName);
+        }
     }
     class Program
     {
