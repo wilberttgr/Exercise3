@@ -120,11 +120,28 @@ namespace Exercise3
             else
                 Console.WriteLine("\nThe first record in the list is:\n\n" + LAST.next.studentNumber + "     " + LAST.next.studentName);
         }
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
+            CircularList obj = new CircularList();
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add data kedalam list");
+                    Console.WriteLine("2. Delete data dari dalam list");
+                    Console.WriteLine("3. View semua data didalam list");
+                    Console.WriteLine("4. Search sebuah data didalam list");
+                    Console.WriteLine("5. Display record pertama dalam list");
+                    Console.WriteLine("6. Exit");
+                    Console.Write("\nMasukkan Pilihan Anda (1-6): ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
