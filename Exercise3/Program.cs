@@ -87,6 +87,32 @@ namespace Exercise3
             else
                 return (true);
         }
+        /*Method Traverse/mengunjungi dan membaca isi list*/
+        public void traverse()//add method traverse
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList kosong. \n");
+            else
+            {
+                Console.WriteLine("\nData didalam list adalah : \n");
+                Node currentNode;
+                currentNode = LAST.next;
+                while (currentNode != null)
+                {
+                    Console.Write(currentNode.studentNumber + " " + currentNode.studentName + "\n");
+                    currentNode = currentNode.next;
+                }
+                Console.Write(LAST.studentNumber + " " + LAST.studentName + "\n");
+                Console.WriteLine();
+            }
+        }
+        public bool listEmpty()//add method listempty
+        {
+            if (LAST == null)
+                return true;
+            else
+                return false;
+        }
     }
     class Program
     {
