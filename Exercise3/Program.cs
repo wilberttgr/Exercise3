@@ -72,6 +72,21 @@ namespace Exercise3
                 LAST = LAST.next;
             return true;
         }
+        /*Method Mencari */
+        public bool Search(int nim, ref Node previous, ref Node current)
+        {
+            previous = LAST;
+            current = LAST;
+            while ((current != null) && (nim != current.studentNumber))
+            {
+                previous = current;
+                current = current.next;
+            }
+            if (current == null)
+                return (false);
+            else
+                return (true);
+        }
     }
     class Program
     {
