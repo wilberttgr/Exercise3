@@ -59,6 +59,19 @@ namespace Exercise3
             NodeBaru.next = current;
             previous.next = NodeBaru;
         }
+        /*Method menghapus*/
+        public bool delNode(int nim)
+        {
+            Node previous, current;
+            previous = current = null;
+            /*check apakah Node*/
+            if (Search(nim, ref previous, ref current) == false)
+                return false;
+            previous.next = current.next;
+            if (current == LAST)
+                LAST = LAST.next;
+            return true;
+        }
     }
     class Program
     {
