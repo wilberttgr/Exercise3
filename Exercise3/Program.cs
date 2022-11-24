@@ -143,7 +143,22 @@ namespace Exercise3
                                 obj.addNode();
                             }
                             break;
-
+                        case '2'://case delete
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList Kosong");
+                                    break;
+                                }
+                                Console.Write("\nMasukkan nomor mahasiswa yang akan dihapus: ");
+                                int nim = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.delNode(nim) == false)
+                                    Console.WriteLine("\nData tidak ditemukan.");
+                                else
+                                    Console.WriteLine("Data dengan nomor mahasiswa " + nim + " dihapus ");
+                            }
+                            break;
                     }
                 }
             }
