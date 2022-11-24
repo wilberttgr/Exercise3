@@ -159,6 +159,11 @@ namespace Exercise3
                                     Console.WriteLine("Data dengan nomor mahasiswa " + nim + " dihapus ");
                             }
                             break;
+                        case '3'://case 1
+                            {
+                                obj.traverse();
+                            }
+                            break;
                     }
                 }
             }
