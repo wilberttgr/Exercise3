@@ -185,6 +185,18 @@ namespace Exercise3
                                 }
                             }
                             break;
+                        case '5'://case 3
+                            {
+                                obj.firstNode();
+                            }
+                            break;
+                        case '6':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("\nPilihan tidak valid");
+                                break;
+                            }
                     }
                 }
             }
